@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'markdown_deux',
     'mainsite',
 ]
 
@@ -126,3 +127,6 @@ MEDIA_ROOT = u'/home/zhengruiguo/mblog/media'
 MEDIA_URL = '/media/'
 STATIC_ROOT = u'/home/zhengruiguo/mblog/static'
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+        os.path.join(BASE_DIR,'static'),
+    ]
